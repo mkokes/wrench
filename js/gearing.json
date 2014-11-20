@@ -1,0 +1,60 @@
+[
+    {
+        "manufacturer": "Puch",
+        "model": "E50",
+        "type": "1 Speed",
+        "ratio1": 5.05,
+        "defaultfront": 16,
+        "defaultrear": 45,
+        "defaulttire": 22
+    },
+    {
+        "manufacturer": "Puch",
+        "model": "ZA50",
+        "version": "1 HP",
+        "type": "2 Speed",
+        "ratio1": 5.615,
+        "ratio2": 4.714,
+        "defaultfront": 18,
+        "defaultrear": 40,
+        "defaulttire": 22
+    },
+    {
+        "manufacturer": "Puch",
+        "model": "ZA50",
+        "version": "1.5 - 2 HP",
+        "type": "2 Speed",
+        "ratio1": 4.375,
+        "ratio2": 4.571,
+        "defaultfront": 18,
+        "defaultrear": 40,
+        "defaulttire": 22
+    },
+    {
+        "manufacturer": "Minarelli",
+        "model": "v1",
+        "type": "1 Speed",
+        "ratio1": 3.533,
+        "defaultfront": 11,
+        "defaultrear": 42,
+        "defaulttire": 16
+    },
+    {
+        "manufacturer": "Sachs",
+        "model": 505,
+        "type": "1 Speed",
+        "ratio1": 4.05,
+        "defaultfront": 11,
+        "defaultrear": 44,
+        "defaulttire": 22
+    },
+    {
+        "manufacturer": "Garelli",
+        "model": "NOI",
+        "type": "1 Speed",
+        "ratio1": 4.438,
+        "defaultfront": 16,
+        "defaultrear": 32,
+        "defaulttire": 16
+    }
+]
