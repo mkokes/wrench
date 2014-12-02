@@ -298,7 +298,7 @@ img {
   width: 100%;
   left: 0;
   transition: all 0.3s ease;
-  z-index:9999;
+  z-index:99;
   height:62px;
 }
 
@@ -378,14 +378,14 @@ img {
 #site-oc-check:checked ~ .page-wrap .main-header {
  width: 100%;
  left:70%;
- z-index: 9999;
+ z-index: 99;
 }
 /*Structure */
 
 body.admin-bar header,body.admin-bar .site-oc {
 	position: fixed;
 	top: 46px;
-	z-index: 9999;
+	z-index: 99;
 }
 #inner-wrap {
 	margin: 0 auto 0 auto;
