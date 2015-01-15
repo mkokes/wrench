@@ -48,7 +48,9 @@ else if (file_exists( get_template_directory() . '/include/webfonts.php' ) ) {
 
 <input type="checkbox" class="site-oc-check" id="site-oc-check" />
 <nav class="site-oc" id="site-oc">
-<?php wp_nav_menu( array('menu' => 'Off Canvas Menu' )); ?>
+<?php if ( has_nav_menu( 'oc-menu' ) ) { 
+      wp_nav_menu( array( 'theme_location' => 'oc-menu') ); 
+} ?>
 </nav>
 
 <div id="contentwrap" class="page-wrap">
@@ -71,7 +73,9 @@ else if (file_exists( get_template_directory() . '/include/webfonts.php' ) ) {
 <path class="magglass" fill="none" stroke="#CE1446" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"/>
 </svg>
 </div>
-<div id="site-menu"><?php wp_nav_menu( array('menu' => 'Main Menu' )); ?></div>
+<div id="site-menu"><?php if ( has_nav_menu( 'main-menu' ) ) { 
+      wp_nav_menu( array( 'theme_location' => 'main-menu') ); 
+} ?></div>
 
 <!-- SET:Lower Menu -->
 <div id="site-search-form">
