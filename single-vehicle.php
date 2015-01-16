@@ -211,7 +211,7 @@
                         </tr><?php endwhile;?>
                     </table><?php endif;?>
 
-                    <div class="2col cm">
+                    <div class="twocol cm">
                         <h2>Custom Modifications</h2>
 
                         <table>
