@@ -45,51 +45,11 @@ else if (file_exists( get_template_directory() . '/include/webfonts.php' ) ) {
 </head>
 
 <body <?php body_class(); ?>>
-
-<input type="checkbox" class="site-oc-check" id="site-oc-check" />
-<nav class="site-oc" id="site-oc">
-<?php if ( has_nav_menu( 'oc-menu' ) ) { 
-      wp_nav_menu( array( 'theme_location' => 'oc-menu') ); 
-} ?>
-</nav>
-
 <div id="contentwrap" class="page-wrap">
 <header class="main-header">
-<div id="navicon">
-	<label for="site-oc-check" class="toggle-menu">
-	<svg class="naviconsvg" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 800 960"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<g fill="#CE1446">
-	<path d="M417.4,224H94.6C77.7,224,64,238.3,64,256c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32   C448,238.3,434.3,224,417.4,224z"/>
-	<path d="M417.4,96H94.6C77.7,96,64,110.3,64,128c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32   C448,110.3,434.3,96,417.4,96z"/>
-	<path d="M417.4,352H94.6C77.7,352,64,366.3,64,384c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32   C448,366.3,434.3,352,417.4,352z"/>
-	</g>
-	</svg>
-	</label>
-</div>
-<div id="site-title"><h1><a href="<?php echo site_url();?>"><?php bloginfo('name'); ?></a></h1></div>
-<div id="site-search-btn">
-<svg class="searchsvg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 800 960"
->
-<path class="magglass" fill="none" stroke="#CE1446" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"/>
-</svg>
-</div>
-<div id="site-menu"><?php if ( has_nav_menu( 'main-menu' ) ) { 
-      wp_nav_menu( array( 'theme_location' => 'main-menu') ); 
-} ?></div>
-
-<!-- SET:Lower Menu -->
-<div id="site-search-form">
-  	<div class="dropdown-content">
-  		<div class="site-search-field">
-  			<form method="get" id="searchform" action="http://martysgarage.info/">
-	  			<div class="search-container">
-		  			<input type="text" size="18" value="" name="s" id="s" class="search-text" />
-		  			<input type="submit" value="Search" name="commit" id="search-submit" class="search-submit"   />
-		  		</div>
-			</form>
-		</div>
-  	</div>
-</div>
-<!-- END:Lower Menu -->
-
+	<nav id="site-menu">
+		<?php if ( has_nav_menu( 'main-menu' ) ) { 
+			wp_nav_menu( array( 'theme_location' => 'main-menu') ); 
+		} ?>
+	</nav>
 </header>
