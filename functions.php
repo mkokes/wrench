@@ -1,24 +1,17 @@
 <?php
  
 // Enqueue Stylesheets
-function wrench_load_styles(){
-	wp_register_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '2.1.3', 'all' );  
-	wp_enqueue_style( 'normalize' );
+function wrench_load_scripts(){
 	wp_register_style( 'mainstyle', get_template_directory_uri() . '/style.css', array(), '0.1', 'all' );  
 	wp_enqueue_style( 'mainstyle' );
-}
-add_action('wp_enqueue_scripts', 'wrench_load_styles');
-
-// Enqueue javascript used by the theme
-function wrench_load_js(){
-	wp_register_script( 'html5',  get_template_directory_uri() . '/js/html5shiv.js',false,'2.7.1',false );
-	wp_enqueue_script('html5');
+	wp_register_style( 'themestyle', get_template_directory_uri() . '/scss/main.css', array(), '0.1', 'all' );  
+	wp_enqueue_style( 'themestyle' );
+	wp_register_script( 'html5shiv',  get_template_directory_uri() . '/js/html5shiv.js',false,'2.7.1',false );
+	wp_enqueue_script('html5shiv');
 	wp_register_script( 'wrench',  get_template_directory_uri() . '/js/wrench.js', array('jquery','jquery-ui-core','jquery-ui-tabs','jquery-effects-core','jquery-effects-blind'),'1.0',false );
 	wp_enqueue_script('wrench');
-	wp_register_script( 'gearing',  get_template_directory_uri() . '/js/gearing.js', array('jquery','jquery-ui-core','jquery-ui-slider','jquery-effects-core','jquery-effects-blind'),'0.1',false );
-	wp_enqueue_script('gearing');
 }
-add_action('wp_enqueue_scripts', 'wrench_load_js');
+add_action('wp_enqueue_scripts', 'wrench_load_scripts');
 
 // This theme uses post thumbnails
 add_theme_support( 'post-thumbnails' );
