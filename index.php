@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <div id="inner-wrap">
+<div id="site-title"><h1><a href="<?php echo site_url();?>"><?php bloginfo('name'); ?></a></h1></div>
 <div id="content">
 <?php if (have_posts()) : while (have_posts()) : the_post(); 
 		$format = get_post_format();
