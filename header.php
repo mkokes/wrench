@@ -32,15 +32,6 @@
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/apple-touch-icon-120x120.png" sizes="120x120" />
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/apple-touch-icon-152x152.png" sizes="152x152" />
 
-<?php
-if (file_exists( get_stylesheet_directory() . '/include/webfonts.php' ) ) {
-	require_once get_stylesheet_directory() . '/include/webfonts.php';
-}
-else if (file_exists( get_template_directory() . '/include/webfonts.php' ) ) {
-	require_once get_template_directory() . '/include/webfonts.php';
-}
-?>
-
 <?php wp_head(); ?>
 </head>
 
